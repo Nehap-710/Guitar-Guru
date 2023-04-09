@@ -3,13 +3,13 @@ from google.oauth2 import id_token
 import pyrebase
 
 config = {
-    'apiKey': "AIzaSyCZiE4vt37uxA_sJrl03KAhk0jYKOtl5sU",
-    'authDomain': "guitarguru-484be.firebaseapp.com",
-    'projectId': "guitarguru-484be",
-    'storageBucket': "guitarguru-484be.appspot.com",
-    'messagingSenderId': "467197811011",
-    'appId': "1:467197811011:web:95286f40bdc0c718c0f7f6",
-    'measurementId': "G-Y74QRV7FFZ",
+    'apiKey': "",
+    'authDomain': "",
+    'projectId': "",
+    'storageBucket': "",
+    'messagingSenderId': "",
+    'appId': "",
+    'measurementId': "",
     'databaseURL': ''
 }
 
