@@ -8,14 +8,14 @@ import pyrebase
 
     
 config = {
-    'apiKey': "AIzaSyCZiE4vt37uxA_sJrl03KAhk0jYKOtl5sU",
-    'authDomain': "guitarguru-484be.firebaseapp.com",
-    'projectId': "guitarguru-484be",
-    'storageBucket': "guitarguru-484be.appspot.com",
-    'messagingSenderId': "467197811011",
-    'appId': "1:467197811011:web:95286f40bdc0c718c0f7f6",
-    'measurementId': "G-Y74QRV7FFZ",
-    'databaseURL': "https://guitarguru-484be-default-rtdb.asia-southeast1.firebasedatabase.app"
+    'apiKey': "",
+    'authDomain': "",
+    'projectId': "",
+    'storageBucket': "",
+    'messagingSenderId': "",
+    'appId': "",
+    'measurementId': "",
+    'databaseURL': ""
 }
 
 def rescale_frame(frame, percent=100):
@@ -160,14 +160,14 @@ def chord_sheet_to_file_realtime(user_id,name,genre):
     cv2.destroyAllWindows()
     global chord_sheet
     config = {
-    'apiKey': "AIzaSyCZiE4vt37uxA_sJrl03KAhk0jYKOtl5sU",
-    'authDomain': "guitarguru-484be.firebaseapp.com",
-    'projectId': "guitarguru-484be",
-    'storageBucket': "guitarguru-484be.appspot.com",
-    'messagingSenderId': "467197811011",
-    'appId': "1:467197811011:web:95286f40bdc0c718c0f7f6",
-    'measurementId': "G-Y74QRV7FFZ",
-    'databaseURL': "https://guitarguru-484be-default-rtdb.asia-southeast1.firebasedatabase.app"
+    'apiKey': "",
+    'authDomain': "",
+    'projectId': "",
+    'storageBucket': "",
+    'messagingSenderId': "",
+    'appId': "",
+    'measurementId': "",
+    'databaseURL': ""
     }
     print("inside realtime to chord sheet linking")
     firebase = pyrebase.initialize_app(config)
