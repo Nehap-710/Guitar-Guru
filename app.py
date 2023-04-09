@@ -23,13 +23,13 @@ app = Flask(__name__)
 #initializing database of pyrebase
 '''
 config = {
-    'apiKey': "AIzaSyCZiE4vt37uxA_sJrl03KAhk0jYKOtl5sU",
-    'authDomain': "guitarguru-484be.firebaseapp.com",
-    'projectId': "guitarguru-484be",
-    'storageBucket': "guitarguru-484be.appspot.com",
-    'messagingSenderId': "467197811011",
-    'appId': "1:467197811011:web:95286f40bdc0c718c0f7f6",
-    'measurementId': "G-Y74QRV7FFZ",
+    'apiKey': "put your apiKey",
+    'authDomain': "put domain",
+    'projectId': "put project id",
+    'storageBucket': "put sorage bucket",
+    'messagingSenderId': "put id",
+    'appId': "put id",
+    'measurementId': "put id",
     'databaseURL': ''
 }
 
@@ -41,8 +41,8 @@ auth = firebase.auth()
 ''' Setting up the Firebase Database '''
 cred = credentials.Certificate("ServiceAccountKey.json")
 firebase_admin.initialize_app(cred, {
-            'storageBucket': 'https://console.firebase.google.com/project/guitarguru-484be/storage/guitarguru-484be.appspot.com/files',
-            'databaseURL': 'https://guitarguru-484be-default-rtdb.asia-southeast1.firebasedatabase.app'
+            'storageBucket': '',
+            'databaseURL': ''
             })
 db_firestore = firestore.client()
 
@@ -165,7 +165,7 @@ def signin():
 
 '''Start of Sign In with Google'''
 
-GOOGLE_CLIENT_ID = "921372109858-0p10p4qamss8j77gmobk0knku438p2da.apps.googleusercontent.com"
+GOOGLE_CLIENT_ID = "your id"
 flow = Flow.from_client_secrets_file(client_secrets_file='client_secret.json',
                                      scopes=["https://www.googleapis.com/auth/userinfo.profile", "https://www.googleapis.com/auth/userinfo.email", "openid"],
                                      redirect_uri="http://127.0.0.1:5000/callback"
@@ -574,24 +574,3 @@ if __name__ == '__main__':
     app.run(debug=True)
     
 
-
-'''
-apiKey: "AIzaSyCZiE4vt37uxA_sJrl03KAhk0jYKOtl5sU",
-    authDomain: "guitarguru-484be.firebaseapp.com",
-    projectId: "guitarguru-484be",
-    storageBucket: "guitarguru-484be.appspot.com",
-    messagingSenderId: "467197811011",
-    appId: "1:467197811011:web:95286f40bdc0c718c0f7f6",
-    measurementId: "G-Y74QRV7FFZ"
-    
-
-npm install -g firebase-tools
-
-firebase login
-firebase init
-firebase deploy
-
-project-467197811011
-
-
-'''
